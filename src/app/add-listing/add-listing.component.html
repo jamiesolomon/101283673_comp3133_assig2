@@ -1,0 +1,50 @@
+<h1>Add a Listing</h1>
+<form>
+    <mat-form-field class="example-full-width" appearance="fill">
+        <mat-label>Listing ID</mat-label>
+        <input [(ngModel)]="listing_id" matInput placeholder="Enter a unique ID not already being used" name="id"/>
+    </mat-form-field>
+    <br />
+    <mat-form-field class="example-full-width" appearance="fill">
+        <mat-label>Title</mat-label>
+        <input [(ngModel)]="listing_title" matInput placeholder="Enter a title for this listing" name="listing_title"/>
+    </mat-form-field>
+    <br />
+    <mat-form-field class="example-full-width" appearance="fill">
+        <mat-label>Dscription</mat-label>
+        <input [(ngModel)]="description" matInput placeholder="Enter a description for this listing" name="description"/>
+    </mat-form-field>
+    <br />
+    <mat-form-field class="example-full-width" appearance="fill">
+        <mat-label>Street</mat-label>
+        <input [(ngModel)]="street" matInput placeholder="Enter the Street" name="street"/>
+    </mat-form-field>
+    <br />
+    <mat-form-field class="example-full-width" appearance="fill">
+        <mat-label>City</mat-label>
+        <input [(ngModel)]="city" matInput placeholder="Enter the city" name="city"/>
+    </mat-form-field>
+    <br />
+    <mat-form-field class="example-full-width" appearance="fill">
+        <mat-label>Postal Code</mat-label>
+        <input [(ngModel)]="postal_code" matInput placeholder="Enter the postal code" name="postal_code"/>
+    </mat-form-field>
+    <br />
+    <mat-form-field class="example-full-width" appearance="fill">
+        <mat-label>Price</mat-label>
+        <input [(ngModel)]="price" matInput placeholder="Enter the price" name="price"/>
+    </mat-form-field>
+    <br />
+    <mat-form-field class="example-full-width" appearance="fill">
+        <mat-label>Email</mat-label>
+        <input [(ngModel)]="email" matInput placeholder="Enter your email" name="email"/>
+    </mat-form-field>
+    <br />
+    <mat-form-field class="example-full-width" appearance="fill">
+        <mat-label>Username</mat-label>
+        <input [(ngModel)]="username" matInput placeholder="Enter your username" name="username"/>
+    </mat-form-field>
+    <br />
+    
+</form>
+<button mat-raised-button color="primary" (click)="addListing()">Confirm Add Listing</button>

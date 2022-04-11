@@ -1,0 +1,30 @@
+<h1>Sign-Up Page</h1>
+<form>
+    <mat-form-field class="example-full-width" appearance="fill">
+        <mat-label>First Name</mat-label>
+        <input [(ngModel)]="firstname" matInput placeholder="Enter your first name" name="firstname"/>
+    </mat-form-field>
+    <br />
+    <mat-form-field class="example-full-width" appearance="fill">
+        <mat-label>Last Name</mat-label>
+        <input [(ngModel)]="lastname" matInput placeholder="Enter your last name" name="lastname"/>
+    </mat-form-field>
+    <br />
+    <mat-form-field class="example-full-width" appearance="fill">
+        <mat-label>Username</mat-label>
+        <input [(ngModel)]="username" matInput placeholder="Create your username" name="username"/>
+    </mat-form-field>
+    <br />
+    <mat-form-field class="example-full-width" appearance="fill">
+        <mat-label>Password</mat-label>
+        <input [(ngModel)]="password" matInput placeholder="Create your password" name="password"/>
+    </mat-form-field>
+    <br />
+    <mat-form-field class="example-full-width" appearance="fill">
+        <mat-label>Email</mat-label>
+        <input [(ngModel)]="email" matInput placeholder="Enter your email" name="email"/>
+    </mat-form-field>
+    <br />
+    <mat-checkbox [(ngModel)]="admin" class="example-margin">Admin Check</mat-checkbox>
+</form>
+<button mat-raised-button color="primary" (click)="addUser()">Sign Up</button>

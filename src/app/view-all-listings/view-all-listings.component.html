@@ -1,0 +1,21 @@
+<ng-container *ngFor="let listing of listings">
+    <mat-card style="margin-bottom: 20px" class="example-card">
+        
+          <div mat-card-avatar class="example-header-image"></div>
+          <mat-card-title>{{listing.listing_id}}</mat-card-title>
+          <mat-card-subtitle>{{listing.listing_title}}</mat-card-subtitle>
+        
+        
+        <mat-card-content>
+            <h3>Price: ${{listing.price}}.00</h3>
+            <h3>Address: {{listing.street}}</h3>
+            <h3>City: {{listing.city}}</h3>
+          <p>
+            {{listing.description}}
+          </p>
+        </mat-card-content>
+      </mat-card>
+</ng-container>
+
+<button routerLink="/add-listing">Add Listing</button>
+
